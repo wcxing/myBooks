@@ -2,11 +2,10 @@
 
 ### 前端知识体系
 
-### Code for the poem
-
 > 读书之法，在循序而渐进，熟读而精思。——朱熹
 
  [https://wcxing.github.io/myBooks/](https://wcxing.github.io/myBooks/)
+
 #### 一、模块化
 - [模块化基础](模块化/模块基础.md)
 

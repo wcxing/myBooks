@@ -4,7 +4,7 @@
 
 > 读书之法，在循序而渐进，熟读而精思。——朱熹
 
- [https://wcxing.github.io/myBooks/](https://wcxing.github.io/myBooks/)
+[https://wcxing.github.io/myBooks/](https://wcxing.github.io/myBooks/)
 
 #### 一、模块化
 - [模块化基础](模块化/模块基础.md)
@@ -13,7 +13,7 @@
 
 - [怎样检测网站的性能](./前端性能优化/怎样检测网站的性能.md)
 
-- [浅谈网站优化](./前端性能优化/浅谈网站优化.md)
+- [浅谈网站优化](./前端性能优化/websiteOptimization.md)
 
 - 图片相关优化
 - css 与 js 的加载与执行

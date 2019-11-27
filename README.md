@@ -13,15 +13,13 @@
 
 - [怎样检测网站的性能](FEOptimization/怎样检测网站的性能.md)
 - [浅谈网站优化](FEOptimization/websiteOptimization.md)
-- 图片相关优化
 - css 与 js 的加载与执行
-- 懒加载与预加载
-- 重绘与回流
-- 浏览器存储
 - 缓存
 - 服务端性能优化
 
-#### 三、node基础知识总结
+#### 三、构建工具
+
+#### 四、node基础知识总结
 - 
 
 

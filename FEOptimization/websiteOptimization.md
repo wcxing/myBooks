@@ -142,6 +142,11 @@ etag
 缓存流程
 ![缓存流程图](./asset/浅析网站优化/缓存流程图.png)
 
+**补充**
+查看浏览器缓存： chrome://cache/
+
+chrome所支持的url列表：chrome://chrome-urls/
+
 ### 二、使请求的资源更小
 
 #### 1. html、css、js 的压缩

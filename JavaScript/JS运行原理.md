@@ -1,4 +1,28 @@
+#### 一、
+1. eventLoop
+2. 微任务（队列）: Promise, process.nextTick
+3. 宏任务（队列）: 整体代码script, setTimeout, setInterval
+```js
+setTimeout(function() {
+    console.log('set1');
+    setTimeout(function() {
+        console.log('set3');
+    }, 0);
+}, 0);
 
+new Promise(function(resolve) {
+    console.log('pro1');
+    resolve();
+}).then(function(){
+    console.log('then1');
+});
+
+setTimeout(function() {
+    console.log('set2');
+})
+// 1. 微任务会先于宏任务，微任务队列空了才会执行宏任务队列里的任务；
+// 2. 微任务：[] , 宏任务：[];
+```
 
 #### 二、
 1. 对象、数组是引用类型
@@ -74,3 +98,25 @@ a.x = a = {n:2};
 console.log('a.x', a.x); // undefined
 console.log('b.x', b.x); // {n: 2}
 ```
+
+#### 三、
+```js
+// v8 引擎只有1.4g的内存可以支配（64位），node 可以使用c++的内存，所以v8在node中比在浏览器中可以使用的内存要大
+var size = 20 * 1024 * 1024;
+var arr = [];
+for (var i = 0; i < 20; i++) {
+    arr.push(new Array(size));
+}
+
+// 内存快满时才回收
+// 只回收不再有效的局部变量
+// 不回收全局变量
+
+// 查看内存
+// 浏览器： window.performance;
+// node：process.memoryUsage();
+```
+##### 1. 容易引发内存使用不当的场景
+1. 滥用全局变量
+2. 缓存不限制大小
+3. 操作大文件
